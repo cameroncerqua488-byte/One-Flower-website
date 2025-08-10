@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: monospace, sans-serif;
-      background: linear-gradient(to bottom, black 0%, black 40%, skyblue 40%, skyblue 100%);
+      background: linear-gradient(to bottom, black 0%, black 20%, skyblue 20%, skyblue 100%);
       color: #ffffff;
       margin: 0;
       padding: 0;
@@ -64,7 +64,7 @@
     }
 
     .message-section {
-      margin-top: 50vh;
+      margin-top: 25vh;
       padding: 40px 20px;
       max-width: 800px;
       margin-left: auto;
@@ -87,12 +87,47 @@
       color: #444;
       font-style: italic;
     }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        margin-top: 40px;
+      }
+
+      p.intro {
+        font-size: 1.1em;
+        margin: 10px 20px;
+      }
+
+      .rose {
+        width: 120px;
+        top: 5px;
+      }
+
+      .tiktok-btn {
+        top: 60%;
+        left: 10%;
+      }
+
+      .tiktok-btn img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .message-section {
+        margin-top: 20vh;
+        font-size: 1em;
+        padding: 20px;
+      }
+
+      .message-section h2 {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Roses in the corners -->
-  <img class="rose rose-left" src="c:\Users\ccerq\Downloads\cba255d4faf0eb76e109f10530aa162f.png" alt="Rose">
-  <img class="rose rose-right" src="c:\Users\ccerq\Downloads\cba255d4faf0eb76e109f10530aa162f.png" alt="Rose">
 
   <!-- TikTok logo button -->
   <a href="https://www.tiktok.com/@oneflowerforgotte" target="_blank" class="tiktok-btn">
@@ -113,6 +148,7 @@
   </div>
 </body>
 </html>
+
 
 
 
